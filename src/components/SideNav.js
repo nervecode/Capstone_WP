@@ -8,7 +8,6 @@ import { ImFolderUpload } from "react-icons/im";
 
 const SideNav = () => {
   const [open, setOpen] = useState(true)
-  
 
   return ( 
 
@@ -30,17 +29,15 @@ const SideNav = () => {
   <h1 
     className={`text-white font-medium origin-left ml-20 text-xl duration-500 ${!open && "scale-0"}`}>FLAR-J
       </h1>
-
-  <ul>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-  </ul>
-
-
-
+<div>
+<ul className={`absolute left-10 mt-20 text-gray-300 font-bold ${!open && "hidden"}`}>
+  <li className='p-10'>PLAY ME!</li>
+  <li className='p-10'>READ ME!</li>
+  <li className='p-10'>KNOW ME!</li>
+  <li className='p-10'>KNOW ME!</li>
+  <li className='p-10'>UPLOAD</li>
+</ul>  
+</div>
   
 </div>
 
@@ -58,15 +55,3 @@ const SideNav = () => {
 }
 
 export default SideNav
-
-
-
-
-{/*<ul className='pt-24 text-white font-bold '>
-          <li className='p-[16%]'>PLAY ME!</li>
-          <li className='p-[16%]'>READ ME!</li>
-          <li className='p-[16%]'>KNOW ME!</li>
-          <li className='p-[16%]'>UPLOAD</li>
-              </ul>
-            
-            ${!open && "rotate-180"}*/}
